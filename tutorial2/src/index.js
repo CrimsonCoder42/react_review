@@ -7,39 +7,24 @@ const books = [
   {
     author: 'Piggyback',
     title: 'The Legend of Zelda',
-    img: "https://images-na.ssl-images-amazon.com/images/I/91vwHMt+x7L._AC_UL600_SR600,400_.jpg"
+    img: "https://images-na.ssl-images-amazon.com/images/I/91vwHMt+x7L._AC_UL600_SR600,400_.jpg",
+    id: 1
   },
   {
     author: 'Dr. Seuss',
     title: "Oh, the Places You'll Go!",
-    img: "https://images-na.ssl-images-amazon.com/images/I/81a5KHEkwQL._AC_UL600_SR600,400_.jpg"
+    img: "https://images-na.ssl-images-amazon.com/images/I/81a5KHEkwQL._AC_UL600_SR600,400_.jpg",
+    id: 2
   }]
 
-
-const someFunc = (param1, param2) => {
-  console.log(param1, param2);
-}
-
-someFunc('hello', 'world');
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book
-        author={firstBook.author}
-        title={firstBook.title}
-        img={firstBook.img}>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        </p>
-      </Book>
-
-      <Book
-        author={secondBook.author}
-        title={secondBook.title}
-        img={secondBook.img} />
-
-    </section>
+    {books.map((book) => {
+  return( <Book key={book.id} {...book} />);
+}
+)}</section>
   );
 }
 
