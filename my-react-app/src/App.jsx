@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Starter from './tutorial/01-useState/starter/03-useState-array';
 
+
+function App() {
   return (
-    <>
-      <h1> my first vite project</h1>
-    </>
-  )
+    <div className='container'>
+      <Starter />
+      
+    
+    </div>
+  );
 }
 
-export default App
+export default App;
