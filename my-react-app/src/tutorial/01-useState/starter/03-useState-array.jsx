@@ -1,4 +1,3 @@
-import React from 'react';
 import { data } from '../../../data';
 import { useState } from 'react';
 
@@ -19,7 +18,7 @@ const UseStateArray = () => {
   return (
     <div key={id} className='item'>
       <h4>{name}</h4>
-      <button onClick={ () => removeItem(id) }>clear items</button>
+      <button onClick={() => removeItem(id) }>clear items</button>
     </div>
   );
 })}

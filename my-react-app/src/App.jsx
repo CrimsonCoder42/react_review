@@ -1,7 +1,7 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import './App.css'
 
-import Starter from './tutorial/01-useState/starter/03-useState-array';
+import Starter from './tutorial/01-useState/starter/05-useState-gotcha';
 
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
     <div className='container'>
       <Starter />
       
-    
     </div>
   );
 }
