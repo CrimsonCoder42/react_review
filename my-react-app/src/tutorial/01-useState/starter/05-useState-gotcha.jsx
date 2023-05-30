@@ -3,7 +3,11 @@ import { useState } from "react";
 const UseStateGotcha = () => {
   const [value, setValue] = useState(0);
   const handleclick = () => {
-    setValue(value + 1);
+    setTimeout(() => {
+      setValue((prevState) => {
+        return prevState + 1;
+      });
+    }, 2000);
   }
 
   return (
