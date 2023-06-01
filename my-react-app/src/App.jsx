@@ -1,16 +1,11 @@
-import Navbar from './tutorial/04-project-structure/starter/navbar/Navbar';
-import './App.css'
-import Home from './tutorial/04-project-structure/starter/Pages/Home';
-import About from './tutorial/04-project-structure/starter/Pages/About';
+import List from "./tutorial/06-forms/starter/03-multiple-inputs";
 
 
 
 function App() {
   return (
     <div className='container'>
-      <Navbar />
-      <Home />
-      <About />
+      <List />
 
     </div>
   );
