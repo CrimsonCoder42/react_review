@@ -5,6 +5,11 @@ const UncontrolledInputs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(e.currentTarget);
+    const formData = new FormData(e.currentTarget);
+    console.log(formData);
+    const name = formData.get('name');
+    console.log(name);
   };
   return (
     <div>
